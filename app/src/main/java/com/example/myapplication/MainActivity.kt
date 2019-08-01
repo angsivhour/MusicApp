@@ -25,28 +25,25 @@ class MainActivity : AppCompatActivity() {
 
     fun clicked(v : View)
     {
+        mp?.pause()
         when(v.id)
         {
             R.id.btn1 -> {
-                mp?.pause()
                 mp = MediaPlayer.create(this, R.raw.demon_slayer)
                 imageView.setImageResource(R.drawable.demon_slayer)
                 flag = 1
             }
             R.id.btn2 -> {
-                mp?.pause()
                 mp = MediaPlayer.create(this, R.raw.then)
                 imageView.setImageResource(R.drawable.then)
                 flag = 2
             }
             R.id.btn3 -> {
-                mp?.pause()
                 mp = MediaPlayer.create(this, R.raw.old_town_road)
                 imageView.setImageResource(R.drawable.old_town_road)
                 flag = 3
             }
             R.id.btn4 -> {
-                mp?.pause()
                 mp = MediaPlayer.create(this, R.raw.gasoline)
                 imageView.setImageResource(R.drawable.gasoline)
                 flag = 4
